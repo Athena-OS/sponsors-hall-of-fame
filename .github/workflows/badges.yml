@@ -1,0 +1,30 @@
+name: Badges
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-badges:
+    name: Update Badges
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+      - name: Install Python dependencies
+        run: python -m pip install --upgrade pip pandas Pillow
+      - name: Get the Numbers
+        run: |
+          echo "WEEKLY=$(python generate.py --weekly)" >> $GITHUB_ENV
+      - name: Create Weekly-Badge
+        uses: schneegans/dynamic-badges-action@master
+        with:
+          auth: ${{ secrets.GIST_SECRET }}
+          gistID: 2d06edf0937c480951feb86b9e719304
+          filename: weekly.svg
+          label: 💞 Receives
+          message: $${{ env.WEEKLY }} / week
+          valColorRange: ${{ env.WEEKLY }}
+          maxColorRange: 50
+          minColorRange: 0
