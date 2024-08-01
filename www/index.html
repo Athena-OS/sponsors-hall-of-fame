@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>💞 Awesome Supporters</title>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        min-height: 100vh;
+        text-align: center;
+        font-size: 1.2em;
+        background-image: url(bottom.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+      }
+
+      a,
+      a:visited {
+        color: #3783d3;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body {
+          color: white;
+          background-color: #222;
+        }
+
+        #crypto-donate-container {
+          color: black;
+          background-color: rgba(128, 128, 128, 0.3) !important;
+        }
+      }
+
+      .only-on-dark {
+        display: none;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        .only-on-dark {
+          display: inline;
+        }
+
+        .only-on-light {
+          display: none;
+        }
+      }
+
+      body::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(top.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center top;
+        z-index: -1;
+      }
+
+      #main-container {
+        width: 100%;
+        max-width: 900px;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .footer {
+        font-size: 0.8em;
+      }
+
+      #crypto-donate-container {
+        backdrop-filter: blur(10px);
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.5s;
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+
+      #crypto-donate-container.visible {
+        opacity: 1;
+        pointer-events: all;
+      }
+
+      #crypto-donate-container .inner {
+        top: 50%;
+        position: absolute;
+        left: 50%;
+        width: 100%;
+        max-width: 700px;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        border-radius: 10px;
+        padding: 25px 25px 40px 25px;
+        overflow: auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+      }
+
+      .card {
+        font-size: 0.8em;
+        flex-basis: 48%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        word-wrap: anywhere;
+      }
+
+      .break {
+        flex-basis: 100%;
+        height: 0;
+      }
+
+      h1 {
+        font-weight: 300;
+      }
+
+      p {
+        margin: 1em 10%;
+      }
+
+      .button {
+        cursor: pointer;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main-container">
+      <h1>The most AWESOME Supporters!</h1>
+      <p>
+        Hello! I am Simon and I love creating free and open-source software! My
+        current main projects are 🥧
+        <a href="https://github.com/schneegans/fly-pie">Fly-Pie</a>, 🔥
+        <a href="https://github.com/schneegans/burn-my-windows"
+          >Burn-My-Windows</a
+        >, the 🧊
+        <a href="https://github.com/schneegans/desktop-cube">Desktop Cube</a>,
+        🥧 <a href="https://github.com/kando-menu/kando">Kando</a>, and the 🏷️
+        <a href="https://github.com/Schneegans/dynamic-badges-action"
+          >Dynamic Badges Action</a
+        >.
+      </p>
+
+      <p>
+        <a href="https://schneegans.github.io/sponsors/"
+          ><img
+            src="https://gist.githubusercontent.com/Schneegans/2d06edf0937c480951feb86b9e719304/raw/weekly.svg"
+        /></a>
+        <a href="https://ko-fi.com/schneegans/"
+          ><img
+            src="https://img.shields.io/badge/Donate-on_Ko--fi-ff5e5b?logo=ko-fi"
+        /></a>
+        <a href="https://github.com/sponsors/Schneegans"
+          ><img
+            src="https://img.shields.io/badge/Donate-on_GitHub-purple?logo=github"
+        /></a>
+        <a href="https://www.paypal.com/donate/?hosted_button_id=3F7UFL8KLVPXE"
+          ><img
+            src="https://img.shields.io/badge/Donate-on_PayPal-009cde?logo=paypal"
+        /></a>
+
+        <span
+          class="button"
+          onclick="document.getElementById('crypto-donate-container').classList.add('visible');"
+        >
+          <img
+            src="https://img.shields.io/badge/Donate-some_Crypto-f7931a?logo=bitcoin"
+          />
+        </span>
+      </p>
+
+      <p>
+        While it is great fun to work on these projects, it is often hard to
+        find the time due to all the other daily duties. Your financial support
+        greatly increases my motivation to keep working on these projects and
+        thus ensures that they stay alive in the future!
+      </p>
+      <p>
+        <strong>Thank you so much. You are awesome!</strong>
+      </p>
+
+      <object
+        data="sponsors_light_big.svg"
+        class="only-on-light"
+        alt="Sponsors"
+      ></object>
+      <object
+        data="sponsors_dark_big.svg"
+        class="only-on-dark"
+        alt="Sponsors"
+      ></object>
+
+      <p>
+        <strong>Do you want to be listed here as well?</strong> This list is
+        ranked by accumulated total donations. Public Ko-fi and GitHub donations
+        are added automatically. If you donate via PayPal, I will try to get in
+        touch and ask how you want to be listed. If you donate Crypto, you can
+        <a href="mailto:code@simonschneegans.de">contact me</a> to become a
+        member of this list as well. You can also get in contact if you want to
+        be removed or listed with a different name, avatar, or link!
+      </p>
+
+      <p class="footer">
+        Download a
+        <a href="sponsors_light_small.svg">small variant</a> or a
+        <a href="sponsors_tiny.svg">tiny variant</a> of this list. Or visit my
+        <a href="https://schneegans.github.io">Homepage</a>!
+      </p>
+    </div>
+
+    <div id="crypto-donate-container">
+      <div class="inner">
+        <a
+          href="bitcoin:bc1qyx2cr25xx6jtydd2f9pr25e2x5e0q7j22klp20"
+          class="card"
+        >
+          <img src="qr-code-bitcoin.svg" width="100%" />
+          bc1qyx2cr25xx6jtydd2f9pr25e2x5e0q7j22klp20
+        </a>
+        <a
+          href="ethereum:0x04AEa34aF1b227a7Aa1473B479222b4459aDB709"
+          class="card"
+        >
+          <img src="qr-code-ethereum.svg" width="100%" />
+          0x04AEa34aF1b227a7Aa1473B479222b4459aDB709
+        </a>
+        <div class="break"></div>
+        <div style="flex-basis: 100%">
+          If can also send other assets to
+          <a href="https://schneegans.cb.id">schneegans.cb.id</a>.
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      const cryptoDonateContainer = document.getElementById(
+        "crypto-donate-container"
+      );
+
+      cryptoDonateContainer.addEventListener("click", (event) => {
+        if (event.target === cryptoDonateContainer) {
+          cryptoDonateContainer.classList.remove("visible");
+        }
+      });
+    </script>
+  </body>
+</html>
