@@ -21,7 +21,7 @@ jobs:
         uses: schneegans/dynamic-badges-action@master
         with:
           auth: ${{ secrets.GIST_SECRET }}
-          gistID: 2d06edf0937c480951feb86b9e719304
+          gistID: 2465ffe7d69897864623f96ddad57e5a
           filename: weekly.svg
           label: 💞 Receives
           message: $${{ env.WEEKLY }} / week
