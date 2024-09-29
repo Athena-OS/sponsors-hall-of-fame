@@ -1,6 +1,6 @@
 # Sponsors List
 
-Online at: https://schneegans.github.io/sponsors/
+Online at: https://athena-os.github.io/sponsors-hall-of-fame/
 
 For manual building:
 
