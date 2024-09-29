@@ -1,12 +1,18 @@
 Sponsor Handle,Sponsor Profile Name,Sponsor Public Email,Sponsorship Started On,Is Public?,Is Yearly?,Transaction ID,Payment Source,Tier Name,Tier Monthly Amount,Processed Amount,Is Prorated?,Status,Transaction Date,Metadata,Country,Region,VAT
+Blackwolf499,,,2024-09-29 10:58:42 +0200,true,false,ch_3Q4IxnEQsq43iHhX1hW26GtZ,github,$20 a month,$20.00,$20.00,false,settled,2024-09-29 10:58:54 +0200,"",AUS,NSW,
+Parrot-CTFs,Parrot-CTFs,support@parrot-ctfs.com,2024-07-29 20:33:29 +0200,true,false,ch_3PtBbnEQsq43iHhX1csNAFva,github,$100 a month,$100.00,$100.00,false,settled,2024-08-29 19:04:18 +0200,"",USA,South Carolina,
 Parrot-CTFs,Parrot-CTFs,support@parrot-ctfs.com,2024-07-29 20:33:29 +0200,true,false,ch_3PhyP3EQsq43iHhX1Cocr7TA,github,$100 a month,$100.00,$100.00,true,settled,2024-07-29 20:34:43 +0200,"",USA,South Carolina,
 Parrot-CTFs,Parrot-CTFs,support@parrot-ctfs.com,2024-07-29 20:33:29 +0200,true,false,ch_3PhyP3EQsq43iHhX1Cocr7TA,github,$20 a month,$20.00,$-20.00,true,settled,2024-07-29 20:34:43 +0200,"",USA,South Carolina,
 Parrot-CTFs,Parrot-CTFs,support@parrot-ctfs.com,2024-07-29 20:33:29 +0200,true,false,ch_3PhyO3EQsq43iHhX008OsRZu,github,$20 a month,$20.00,$20.00,false,settled,2024-07-29 20:33:41 +0200,"",USA,South Carolina,
+caido,Caido,info@caido.io,2024-07-21 01:45:35 +0200,true,false,ch_3PvMKcEQsq43iHhX1hXu4RN8,github,$10 a month,$10.00,$10.00,false,settled,2024-09-04 18:45:30 +0200,"",Canada,Quebec,1229660612TQ0001
+caido,Caido,info@caido.io,2024-07-21 01:45:35 +0200,true,false,ch_3Pk7ycEQsq43iHhX0TAFI4g1,github,$10 a month,$10.00,$10.00,false,settled,2024-08-04 19:14:24 +0200,"",Canada,Quebec,1229660612TQ0001
 caido,Caido,info@caido.io,2024-07-21 01:45:35 +0200,true,false,ch_3Pemy6EQsq43iHhX1iWEoktZ,github,$10 a month,$10.00,$4.84,true,settled,2024-07-21 01:45:45 +0200,"",Canada,Quebec,1229660612TQ0001
 missingjvne,MissingxJvne,,2024-04-05 23:58:26 +0200,true,false,ch_3PONnJEQsq43iHhX0M5OqKNY,github,$5 a month,$5.00,$5.00,false,settled,2024-06-05 19:56:32 +0200,"",USA,Utah,
 missingjvne,MissingxJvne,,2024-04-05 23:58:26 +0200,true,false,ch_3PD8QGEQsq43iHhX0iEQ0FW9,github,$5 a month,$5.00,$5.00,false,settled,2024-05-05 19:03:40 +0200,"",USA,Utah,
 missingjvne,MissingxJvne,,2024-04-05 23:58:26 +0200,true,false,ch_3P2KmJEQsq43iHhX1w7Zj5mT,github,$20 a month,$20.00,$20.00,false,settled,2024-04-05 23:58:38 +0200,"",USA,Utah,
 Lavender-exe,Lav,,2024-02-13 13:38:43 +0100,true,false,ch_3OjLG8EQsq43iHhX1rYvbKMr,github,$5 one time,$5.00,$5.00,true,settled,2024-02-13 13:38:56 +0100,"",OMN,Muscat,
+Sudo-Ivan,Ivan,,2023-12-27 21:43:08 +0100,true,false,ch_3Q2cT5EQsq43iHhX0ZzI4SZ5,github,$20 a month,$20.00,$20.00,false,settled,2024-09-24 19:42:56 +0200,"",USA,Texas,
+Sudo-Ivan,Ivan,,2023-12-27 21:43:08 +0100,true,false,ch_3PrNPlEQsq43iHhX1KcAUw4A,github,$20 a month,$20.00,$20.00,false,settled,2024-08-24 19:23:22 +0200,"",USA,Texas,
 Sudo-Ivan,Ivan,,2023-12-27 21:43:08 +0100,true,false,ch_3Pg9CHEQsq43iHhX1V4LLUiA,github,$20 a month,$20.00,$20.00,false,settled,2024-07-24 19:50:26 +0200,"",USA,Texas,
 Sudo-Ivan,Ivan,,2023-12-27 21:43:08 +0100,true,false,ch_3PXo3ZEQsq43iHhX1lJk7rHP,github,$20 a month,$20.00,$20.00,true,settled,2024-07-01 19:38:25 +0200,"",USA,Texas,
 Sudo-Ivan,Ivan,,2023-12-27 21:43:08 +0100,true,false,ch_3PK1lMEQsq43iHhX04lDLxEx,github,$20 a month,$20.00,$20.00,false,settled,2024-05-24 19:21:55 +0200,"",USA,Texas,
@@ -47,6 +53,8 @@ Apok01,Apo,,2023-06-03 21:38:29 +0200,true,false,ch_3NoqfLEQsq43iHhX0grM7gNI,git
 Apok01,Apo,,2023-06-03 21:38:29 +0200,true,false,ch_3Nb4hTEQsq43iHhX1kPcfORe,github,$20 a month,$20.00,$20.00,false,settled,2023-08-03 18:55:39 +0200,"",GBR,Bristol,
 Apok01,Apo,,2023-06-03 21:38:29 +0200,true,false,ch_3NPpncEQsq43iHhX0KDJDDGO,github,$20 a month,$20.00,$20.00,false,settled,2023-07-03 18:40:39 +0200,"",GBR,Bristol,
 Apok01,Apo,,2023-06-03 21:38:29 +0200,true,false,ch_3NF0HUEQsq43iHhX1zvvHPXu,github,$20 a month,$20.00,$20.00,false,settled,2023-06-03 21:38:42 +0200,"",GBR,Bristol,
+mcfly76,Fabio Terlizzi,,2023-04-27 15:54:03 +0200,true,false,ch_3Q3iFgEQsq43iHhX1apQfjvf,github,$1 a month,$1.00,$1.00,false,settled,2024-09-27 23:21:00 +0200,"",ITA,Como,
+mcfly76,Fabio Terlizzi,,2023-04-27 15:54:03 +0200,true,false,ch_3PsSnDEQsq43iHhX0llQWGjJ,github,$1 a month,$1.00,$1.00,false,settled,2024-08-27 19:08:42 +0200,"",ITA,Como,
 mcfly76,Fabio Terlizzi,,2023-04-27 15:54:03 +0200,true,false,ch_3PhEHCEQsq43iHhX1F5oIGgd,github,$1 a month,$1.00,$1.00,false,settled,2024-07-27 19:31:41 +0200,"",ITA,Como,
 mcfly76,Fabio Terlizzi,,2023-04-27 15:54:03 +0200,true,false,ch_3PWLvDEQsq43iHhX1aJDXdjs,github,$1 a month,$1.00,$1.00,false,settled,2024-06-27 19:33:23 +0200,"",ITA,Como,
 mcfly76,Fabio Terlizzi,,2023-04-27 15:54:03 +0200,true,false,ch_3PL744EQsq43iHhX0ZSgdctp,github,$1 a month,$1.00,$1.00,false,settled,2024-05-27 19:27:15 +0200,"",ITA,Como,
@@ -63,6 +71,8 @@ mcfly76,Fabio Terlizzi,,2023-04-27 15:54:03 +0200,true,false,ch_3NYYd8EQsq43iHhX
 mcfly76,Fabio Terlizzi,,2023-04-27 15:54:03 +0200,true,false,ch_3NQCDfEQsq43iHhX0cGZ6mpO,github,$1 a month,$1.00,$1.00,false,settled,2023-07-04 18:37:01 +0200,"",ITA,Como,
 mcfly76,Fabio Terlizzi,,2023-04-27 15:54:03 +0200,true,false,ch_3NCQDJEQsq43iHhX1I9H5C4z,github,$1 a month,$1.00,$1.00,false,settled,2023-05-27 18:43:42 +0200,"",ITA,Como,
 mcfly76,Fabio Terlizzi,,2023-04-27 15:54:03 +0200,true,false,ch_3N1VGrEQsq43iHhX1coIG324,github,$1 a month,$1.00,$1.00,false,settled,2023-04-27 15:54:13 +0200,"",ITA,Como,
+CriminalShrimp,Aleister,,2023-03-24 18:17:54 +0100,true,false,ch_3Q2cO8EQsq43iHhX0tjIqjGB,github,$1 a month,$1.00,$1.00,false,settled,2024-09-24 19:37:11 +0200,"",BRA,Brasil,
+CriminalShrimp,Aleister,,2023-03-24 18:17:54 +0100,true,false,ch_3PrNOgEQsq43iHhX0GaJTIWL,github,$1 a month,$1.00,$1.00,false,settled,2024-08-24 19:11:41 +0200,"",BRA,Brasil,
 CriminalShrimp,Aleister,,2023-03-24 18:17:54 +0100,true,false,ch_3Pg99lEQsq43iHhX13ZSsnba,github,$1 a month,$1.00,$1.00,false,settled,2024-07-24 19:53:02 +0200,"",BRA,Brasil,
 CriminalShrimp,Aleister,,2023-03-24 18:17:54 +0100,true,false,ch_3PVGbZEQsq43iHhX13MwQWd5,github,$1 a month,$1.00,$1.00,false,settled,2024-06-24 19:43:10 +0200,"",BRA,Brasil,
 CriminalShrimp,Aleister,,2023-03-24 18:17:54 +0100,true,false,ch_3PK1mqEQsq43iHhX0gcAMBan,github,$1 a month,$1.00,$1.00,false,settled,2024-05-24 19:29:49 +0200,"",BRA,Brasil,
