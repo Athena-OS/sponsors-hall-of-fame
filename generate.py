@@ -73,6 +73,9 @@ def createAvatarImage(avatar_url, amount, size):
 def ellipsize(name, max_length):
     return (name[:max_length-1] + '…') if len(name) > max_length else name
 
+def parseAmount(column):
+    # Strip "$", thousands separators, and anything else that isn't part of the number.
+    return pd.to_numeric(column.astype(str).str.replace(r"[^\d.\-]", "", regex=True))
 
 def getGitHubSponsors():
     # Return empty DataFrame if data/github.csv does not exist.
@@ -105,8 +108,7 @@ def getGitHubSponsors():
     sponsors = sponsors[["Name", "Processed Amount", "Link", "Avatar"]]
 
     # Parse the "Processed Amount" column as numbers (stripping the leading $).
-    sponsors["Processed Amount"] = sponsors["Processed Amount"].str[1:].astype(
-        float)
+    sponsors["Processed Amount"] = parseAmount(sponsors["Processed Amount"])
 
     # Group by "Name" and sum the "Processed Amount" column.
     sponsors = sponsors.groupby(["Name", "Link", "Avatar"]).sum()
@@ -130,8 +132,7 @@ def getGitHubAmountSince(date):
     sponsors = sponsors[["Transaction Date", "Processed Amount"]]
 
     # Parse the "Processed Amount" column as numbers (stripping the leading $).
-    sponsors["Processed Amount"] = sponsors["Processed Amount"].str[1:].astype(
-        float)
+    sponsors["Processed Amount"] = parseAmount(sponsors["Processed Amount"])
 
     # Sum the "Processed Amount" column for all rows where the date is after the given date.
     sponsors["Transaction Date"] = pd.to_datetime(
@@ -150,7 +151,7 @@ def getKofiSponsors():
         return pd.DataFrame()
 
     # Read the CSV file.
-    sponsors = pd.read_csv("data/ko-fi.csv")
+    sponsors = pd.read_csv("data/ko-fi.csv", thousands=",")
 
     # Remove all rows where the name is "Ko-fi Supporter".
     sponsors = sponsors[sponsors["From"] != "Ko-fi Supporter"]
@@ -186,7 +187,7 @@ def getKofiAmountSince(date):
         return 0.0
 
     # Read the CSV file.
-    sponsors = pd.read_csv("data/ko-fi.csv")
+    sponsors = pd.read_csv("data/ko-fi.csv", thousands=",")
 
     # Strip my own donations.
     sponsors = sponsors[sponsors["From"] != "Simon Schneegans"]
@@ -211,7 +212,7 @@ def getPaypalSponsors():
         return pd.DataFrame()
 
     # Read the CSV file.
-    sponsors = pd.read_csv("data/paypal.csv")
+    sponsors = pd.read_csv("data/paypal.csv", thousands=",")
 
     # Remove all private sponsorships.
     sponsors = sponsors[sponsors["Public"] == True]
@@ -227,7 +228,7 @@ def getPaypalAmountSince(date):
         return 0.0
 
     # Read the CSV file.
-    sponsors = pd.read_csv("data/paypal.csv")
+    sponsors = pd.read_csv("data/paypal.csv", thousands=",")
 
     # Only keep amount and date columns.
     sponsors = sponsors[["Total", "Date"]]
