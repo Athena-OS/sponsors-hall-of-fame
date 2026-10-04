@@ -12,12 +12,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v7
       - name: Install Python dependencies
         run: python -m pip install --upgrade pip pandas Pillow
       - name: Get the Numbers
         run: |
-          echo "WEEKLY=$(python generate.py --weekly)" >> $GITHUB_ENV
+          weekly=$(python generate.py --weekly)
+          echo "Weekly value: '$weekly'"
+          if [ -z "$weekly" ]; then echo "generate.py produced no output"; exit 1; fi
+          echo "WEEKLY=$weekly" >> "$GITHUB_ENV"
       - name: Create Weekly-Badge
         uses: schneegans/dynamic-badges-action@master
         with:
